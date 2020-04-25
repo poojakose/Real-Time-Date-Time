@@ -1,0 +1,16 @@
+
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<iframe src="http://freesecure.timeanddate.com/clock/i6jg10fb/n1038/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="87" height="36"></iframe>
+
+<script type="text/javascript">
+document.write ('<p> <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+		setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</body>
+</html>
